@@ -90,10 +90,19 @@
     <input id="cylinders" placeholder="Cylinder Nos (OX-1,OX-2)">
   </div>
 
-  <button class="btn" onclick="saveFull()">➕ Full Cylinder (OUT)</button>
+<div style="margin-top:20px;">
+  <button onclick="saveFull()" 
+    style="width:100%; padding:15px; margin-bottom:10px; 
+    background:#28a745; color:white; border:none; border-radius:8px; font-size:16px;">
+    ➕ Full Cylinder (OUT)
+  </button>
 
-  <button class="btn btn-return" onclick="saveEmpty()">🔄 Empty Cylinder (IN)</button>
-
+  <button onclick="saveEmpty()" 
+    style="width:100%; padding:15px; 
+    background:#ff9800; color:white; border:none; border-radius:8px; font-size:16px;">
+    🔄 Empty Cylinder (IN)
+  </button>
+</div>
 </div>
 
 <script>
