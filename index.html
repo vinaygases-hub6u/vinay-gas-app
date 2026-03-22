@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vinay Gas App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 14px;
+      background: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .btn-return {
+      background: #e67e22;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h2>🚀 Vinay Gas Entry</h2>
+
+  <div class="card">
+    <input id="customer" placeholder="Customer Name">
+
+    <input id="invoice" placeholder="Invoice No">
+
+    <select id="branch">
+      <option>Vinay Gas Agency</option>
+      <option>Vinay Enterprises</option>
+      <option>Vinay Industrial Gases</option>
+    </select>
+
+    <select id="gas">
+      <option>OXYGEN</option>
+      <option>NITROGEN</option>
+      <option>ARGON</option>
+    </select>
+
+    <input id="cylinders" placeholder="Cylinder Nos (OX-1,OX-2)">
+  </div>
+
+  <button class="btn" onclick="saveFull()">➕ Full Cylinder (OUT)</button>
+
+  <button class="btn btn-return" onclick="saveEmpty()">🔄 Empty Cylinder (IN)</button>
+
+</div>
+
+<script>
+var url = "<!DOCTYPE html>
+<html>
+<head>
+  <title>Vinay Gas App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 14px;
+      background: #27ae60;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .btn-return {
+      background: #e67e22;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h2>🚀 Vinay Gas Entry</h2>
+
+  <div class="card">
+    <input id="customer" placeholder="Customer Name">
+
+    <input id="invoice" placeholder="Invoice No">
+
+    <select id="branch">
+      <option>Vinay Gas Agency</option>
+      <option>Vinay Enterprises</option>
+      <option>Vinay Industrial Gases</option>
+    </select>
+
+    <select id="gas">
+  <option>OXYGEN</option>
+  <option>Medical Oxygen</option>
+  <option>10 L Oxygen</option>
+  <option>10 L Medical Oxygen</option>
+  <option>5 L Medical Oxygen</option>
+  <option>NITROGEN</option>
+  <option>10 Nitrogen</option>
+  <option>ARGON</option>
+  <option>CO2</option>
+  <option>D/A</option>
+  <option>Nitrous</option>
+</select>
+
+    <input id="cylinders" placeholder="Cylinder Nos (OX-1,OX-2)">
+  </div>
+
+  <button class="btn" onclick="saveFull()">➕ Full Cylinder (OUT)</button>
+
+  <button class="btn btn-return" onclick="saveEmpty()">🔄 Empty Cylinder (IN)</button>
+
+</div>
+
+<script>
+var url = "https://script.google.com/macros/s/AKfycbxU4vjGVqQlxL0BoydRvrwzYn4O2zUES31WXMnki0l9REIh5h-FQkgjIped7PDhhptMbg/exec";
+
+function sendData(status) {
+
+  var data = {
+    customer: document.getElementById("customer").value,
+    invoice: document.getElementById("invoice").value,
+    branch: document.getElementById("branch").value,
+    gas: document.getElementById("gas").value,
+    cylinders: document.getElementById("cylinders").value,
+    status: status
+  };
+
+  fetch(url, {
+    method: "POST",
+    mode: "no-cors",
+    body: JSON.stringify(data)
+  });
+
+  alert("Saved ✅");
+
+}
+
+function saveFull() {
+  sendData("Full Cylinder");
+}
+
+function saveEmpty() {
+  sendData("Empty Cylinder");
+}
+</script>
+
+</body>
+</html>";
+
+function sendData(status) {
+
+  var data = {
+    customer: document.getElementById("customer").value,
+    invoice: document.getElementById("invoice").value,
+    branch: document.getElementById("branch").value,
+    gas: document.getElementById("gas").value,
+    cylinders: document.getElementById("cylinders").value,
+    status: status
+  };
+
+  fetch(url, {
+    method: "POST",
+    mode: "no-cors",
+    body: JSON.stringify(data)
+  });
+
+  alert("Saved ✅");
+
+}
+
+function saveFull() {
+  sendData("Full Cylinder");
+}
+
+function saveEmpty() {
+  sendData("Empty Cylinder");
+}
+</script>
+
+</body>
+</html>
